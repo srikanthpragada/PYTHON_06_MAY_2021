@@ -19,3 +19,8 @@ names = ['Python', 'java', 'c', 'C#', 'JavaScript']
 
 for n in filter(hasupper, names):
     print(n)
+
+# Using lambda
+
+for n in filter(lambda n: n % 2 == 0, nums):
+    print(n)
