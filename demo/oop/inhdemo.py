@@ -1,4 +1,8 @@
-class Person:
+from abc import ABC, abstractmethod
+
+
+# Abstract class
+class Person(ABC):
     def __init__(self, name, email):
         self.name = name
         self.email = email
@@ -6,6 +10,10 @@ class Person:
     def show(self):
         print(self.name)
         print(self.email)
+
+    @abstractmethod
+    def getoccupation(self):
+        pass
 
 
 class Student(Person):
@@ -26,6 +34,9 @@ class Student(Person):
         if college is not None:
             self.college = college
 
+    def getoccupation(self):
+        return f"Studying {self.course} at {self.college}"
+
 
 class Employee(Person):
     def __init__(self, name, email, job, company):
@@ -43,6 +54,9 @@ class Employee(Person):
             self.job = job
         if company is not None:
             self.company = company
+
+    def getoccupation(self):
+        return f"Working as {self.job} in {self.company}"
 
 
 class OnsiteEmployee(Employee):
@@ -63,6 +77,7 @@ class OnsiteEmployee(Employee):
 s = Student("Bob", "bob@gmail.com", "MS CS", "Stanford")
 s.change(course="MS IS")
 s.show()
+print(s.getoccupation())
 
 e = OnsiteEmployee("Jack", "jack@yahoo.com", "Prog", "TCS", "Google")
 e.change(client="Twitter")
