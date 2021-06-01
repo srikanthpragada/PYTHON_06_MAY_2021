@@ -11,6 +11,7 @@ class B:
 
 class C(A, B):
     def process(self):
+        #super().process()
         A.process(self)
         B.process(self)
 

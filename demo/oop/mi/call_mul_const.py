@@ -1,11 +1,11 @@
 class A:
     def __init__(self, p1):
-        pass
+        self.p1 = p1
 
 
 class B:
     def __init__(self, p2):
-        pass
+        self.p2 = p2
 
 
 class C(A, B):
