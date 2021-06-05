@@ -1,0 +1,6 @@
+abc@gmail.com
+bill@yahoo.com
+bob@yahoo.com:larray@gmail.com
+joe@gmail.com
+pqr@gmail.com
+steve@gmail.com
