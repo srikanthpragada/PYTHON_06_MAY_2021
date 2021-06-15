@@ -1,0 +1,17 @@
+<courses>
+    <course>
+        <title>Python</title>
+        <duration>36</duration>
+        <fee>4000</fee>
+    </course>
+    <course>
+        <title>Data Science</title>
+        <duration>36</duration>
+        <fee>5000</fee>
+    </course>
+    <course>
+        <title>AWS</title>
+        <duration>30</duration>
+        <fee>5000</fee>
+    </course>
+</courses>
